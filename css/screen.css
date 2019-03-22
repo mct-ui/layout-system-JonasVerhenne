@@ -26,12 +26,6 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-    background: #e85e00;
-    color: white;
-    text-shadow: none;
-}
-
 ::selection {
     background: #e85e00;
     color: white;
@@ -160,6 +154,23 @@ a:focus {
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
+/*
+    Objects: Row
+    ---
+    Creates a horizontal row that stretches the viewport and adds padding around children
+*/
+
+.o-row{
+    padding: 24px 24px 0;
+}
+
+.o-row--primary {}
+
+.o-row--dark {}
+
+@media (min-width: 768px) {
+    .o-row--lg {}
+}
 
 /*
     Object: Object name
